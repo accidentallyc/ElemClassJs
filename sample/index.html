@@ -1,0 +1,45 @@
+<script src="../src/elemclass.js"></script>
+<style>
+  body{
+    font-family: Arial;
+  }
+  [visible]{
+    display: block;
+  }
+
+  pre{
+    background:#CCC;
+    padding:0.5em;
+  }
+</style>
+<script>
+window.onload = function(){
+  body(
+    h1("Welcome to ElemClassJS"),
+    hr,
+    p("This page is constructed purely with ElemClassJS. "),
+    p("Try it! Inspect element and look at the script"),
+    hr,
+    h2("So what is the advantage of ElemClassJS?"),
+    div
+      (
+        "It's an easy yet programmtic way to create dynamic html elements!",
+        br,br,br,
+        b("Basic Example"),
+        pre
+          (
+            "h1('Good morning world!')"
+          ),
+        br,br,br,
+        b("Nested Example"),
+        pre
+          (
+            "h1(\n\
+            \tp('Hello world!'),\n\
+            \tb(i('FOo bar'))\n\
+            )"
+          )
+      )
+  )
+}
+</script>
